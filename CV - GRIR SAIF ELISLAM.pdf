@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/pc%20gamer/Documents/desktopapp/cv.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - GRIR SAIF ELISLAM</title>
+    <link href="./CV - GRIR SAIF ELISLAM_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --dark-grey: #333333;
+            --light-grey: #666666;
+            --border-color: #dddddd;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: var(--black);
+            line-height: 1.6;
+        }
+
+        .resume-wrapper {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 50px 60px;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .download-btn {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background-color: var(--black);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s;
+        }
+
+        .download-btn:hover {
+            background-color: var(--dark-grey);
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+            .resume-wrapper {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                max-width: 100%;
+                width: 100%;
+            }
+            .download-btn {
+                display: none;
+            }
+            @page {
+                margin: 1cm;
+            }
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--black);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            color: var(--black);
+        }
+
+        .header-text h2 {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--light-grey);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 13.5px;
+            color: var(--dark-grey);
+            margin-bottom: 5px;
+        }
+
+        .header-image {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--border-color);
+            margin-left: 20px;
+            flex-shrink: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--black);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 6px;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .profile-text {
+            font-size: 14px;
+            color: var(--dark-grey);
+            text-align: justify;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--black);
+        }
+
+        .item-date {
+            font-size: 13.5px;
+            color: var(--light-grey);
+            font-weight: 500;
+        }
+
+        .item-subtitle {
+            font-size: 14px;
+            font-style: italic;
+            color: var(--dark-grey);
+            margin-bottom: 8px;
+        }
+
+        .item ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .item li {
+            font-size: 14px;
+            color: var(--dark-grey);
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .item li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--light-grey);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-category h4 {
+            font-size: 14.5px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--black);
+        }
+
+        .skill-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            font-size: 14px;
+            color: var(--dark-grey);
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skill-list li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--light-grey);
+            font-size: 12px;
+        }
+
+        .interests-text {
+            font-size: 14px;
+            color: var(--dark-grey);
+            word-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-wrapper">
+    <button onclick="window.print()" class="download-btn">
+        <svg style="width: 18px; height: 18px;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+        Download PDF
+    </button>
+
+    <header>
+        <div class="header-text">
+            <h1>GRIR SAIF ELISLAM</h1>
+            <h2>INFORMATIQUE</h2>
+            <p class="contact-info">📞 +213 540 066 832 | ✉️ grirsaifelislam@gmail.com</p>
+            <p class="contact-info">📍 Rue 18 Février, Al Achir - Bordj Bou Arréridj</p>
+            <p class="contact-info">Né le 29/12/2003 | Permis de conduire : B</p>
+        </div>
+        
+        <div class="header-image">
+            <!-- 
+               IMPORTANT FOR THE PROFILE PICTURE:
+               The image file on your computer must be named exactly "profile.jpg"
+               and must be placed in the exact same folder as this cv.html file.
+            -->
+            <img src="./CV - GRIR SAIF ELISLAM_files/profile.jpg" alt="Photo de profil" onerror="this.onerror=null; this.src=&#39;data:image/svg+xml;utf8,&lt;svg xmlns=\&#39;http://www.w3.org/2000/svg\&#39; viewBox=\&#39;0 0 24 24\&#39; fill=\&#39;%23ccc\&#39;&gt;&lt;path d=\&#39;M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\&#39;/&gt;&lt;/svg&gt;&#39;;">
+        </div>
+    </header>
+
+    <section class="section">
+        <h3 class="section-title">PROFIL</h3>
+        <p class="profile-text">Diplômé en informatique, je maitrise le développement logiciel et la gestion de bases de données. Je cherche à appliquer et approfondir ces compétences dans un environnement professionnel stimulant.</p>
+    </section>
+
+    <section class="section">
+        <h3 class="section-title">PROJETS PROFESSIONNELS &amp; ACADÉMIQUES</h3>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">TabibVerify</div>
+                <div class="item-date">Projet de Compétition</div>
+            </div>
+            <ul>
+                <li>API de vérification d'identité sécurisée pour les professionnels de santé en Algérie.</li>
+                <li>Intègre l'extraction OCR côté client (Tesseract.js), la vérification CNOM et la détection de présence (Liveness/NFC).</li>
+                <li>Mise en place d'un algorithme de score de confiance.</li>
+                <li><strong>Stack technique :</strong> Supabase, Upstash Redis.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Study Hub DZ</div>
+                <div class="item-date">Projet Académique</div>
+            </div>
+            <ul>
+                <li>Plateforme web intelligente universitaire dédiée à la révision et à l'apprentissage.</li>
+                <li>Fonctionnalités proposées : partage de cours et partage de travaux pratiques (TP).</li>
+                <li>Intégration d'un générateur automatique de QCM.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3 class="section-title">EXPÉRIENCE PROFESSIONNELLE</h3>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Responsable de la maintenance technique</div>
+                <div class="item-date">2024</div>
+            </div>
+            <div class="item-subtitle">ANS GROUP - Bordj Bou Arréridj</div>
+            <ul>
+                <li>Maintenance technique et optimisation des plateformes numériques (sites web et applications de service client).</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Stage en maintenance technique</div>
+                <div class="item-date">2023</div>
+            </div>
+            <div class="item-subtitle">ANS GROUP - Bordj Bou Arréridj</div>
+            <ul>
+                <li>Maintenance technique des plateformes dédiées.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3 class="section-title">COMPÉTENCES</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Développement &amp; Données</h4>
+                <ul class="skill-list">
+                    <li>Langage C, Java, Python, PHP</li>
+                    <li>Développement web (HTML/CSS/JS)</li>
+                    <li>Frameworks (React, Angular)</li>
+                    <li>Bases de données (SQL, Oracle, SQL Server)</li>
+                    <li>Analyse de données (NumPy, Matplotlib, Colab)</li>
+                    <li>Programmation orientée objet</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Outils &amp; Systèmes</h4>
+                <ul class="skill-list">
+                    <li>Microsoft Visual Studio (Aide à la décision)</li>
+                    <li>Architecture d'entreprise et modélisation</li>
+                    <li>Notion de système (AIE)</li>
+                    <li>Desktop Help</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Soft Skills</h4>
+                <ul class="skill-list">
+                    <li>Gestion du temps</li>
+                    <li>Travail d'équipe</li>
+                    <li>Communication efficace</li>
+                    <li>Pensée critique</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Langues</h4>
+                <ul class="skill-list">
+                    <li>Français (Courant)</li>
+                    <li>Anglais (Opérationnel)</li>
+                    <li>Arabe (Langue maternelle)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3 class="section-title">FORMATIONS</h3>
+        
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Ingénierie de l'informatique décisionnelle</div>
+                <div class="item-date">Présent</div>
+            </div>
+            <div class="item-subtitle">Université de Bordj Bou Arréridj</div>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Ingénierie des systèmes d'information et du logiciel</div>
+                <div class="item-date">2025</div>
+            </div>
+            <div class="item-subtitle">Université de Bordj Bou Arréridj</div>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Formations et Certifications (Plateforme Maaref)</div>
+                <div class="item-date">2024</div>
+            </div>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="position: relative; padding-left: 15px; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: #666;">•</span> Formation sur le serveur SQL</li>
+                <li style="position: relative; padding-left: 15px; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: #666;">•</span> Formation sur JavaScript</li>
+                <li style="position: relative; padding-left: 15px; margin-bottom: 4px;"><span style="position: absolute; left: 0; color: #666;">•</span> Formation sur HTML / CSS</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <div class="item-title">Baccalauréat Mathématiques</div>
+                <div class="item-date">2021</div>
+            </div>
+            <div class="item-subtitle">Bordj Bou Arréridj</div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h3 class="section-title">CENTRES D'INTÉRÊT</h3>
+        <p class="interests-text">Voyage • Musique • Sport • Jeux de stratégie</p>
+    </section>
+</div>
+
+
+
+</body></html>
